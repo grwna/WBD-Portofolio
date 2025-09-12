@@ -1,6 +1,7 @@
 html {
     scroll-padding-top: 30px;
     scroll-behavior: smooth;
+    font-size: 125%;
 }
 
 body {
@@ -17,7 +18,7 @@ p {
     color: #c5c5c5;
     font-family: 'Montserrat', sans-serif;
     font-size: 0.9rem;
-    line-height: 20px;
+    line-height: 1.7;
 }
 
 h1 {
@@ -307,4 +308,43 @@ section {
 .experience-card p {
     font-size: 0.7rem;
     margin-top: 0.7rem;
+}
+
+
+/* =================== FOR SMALL SCREENS =================== */
+@media (max-width: 768px) {
+    .profile-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .profile-information > h1,
+    .profile-information > h3 {
+        text-align: center;
+    }
+
+    .profile-contacts {
+        padding: 1rem 1rem;
+        border-radius: 1rem;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+
+        margin: auto;
+
+    }
+
+    nav {
+        display: none;
+    }
+
+    .experience-card-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
 }
