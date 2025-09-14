@@ -163,7 +163,7 @@ section {
 .skill-container {
     border: 1px solid #3e3e3e;
     border-radius: 12px;
-    padding: 0 1rem 1.5rem 1rem;
+    padding: 0 1.5rem 1.5rem 1.5rem;
     
     display: flex;
     flex-direction: column;
@@ -199,7 +199,7 @@ section {
 }
 
 .skill-tag {
-    background-color: #333;
+    border: 1px solid #3e3e3e;
     color: #e0e0e0;
     font-size: 0.7rem;
     font-family: 'Hanken Grotesk';
@@ -240,6 +240,9 @@ section {
     font-weight: 600;
     font-size: 0.9rem;
 }
+
+
+/* ==================== EXPERIENCE ==================== */
 
 .experience-list {
     display: flex;
@@ -289,11 +292,6 @@ section {
     margin-right: 0.5rem;
 }
 
-.experience-card *{
-    text-align: left;
-    margin: 0;
-}
-
 .experience-card * > i{
     margin-right: 0.5rem;
 }
@@ -310,6 +308,93 @@ section {
     margin-top: 0.7rem;
 }
 
+
+/* ==================== PROJECTS ==================== */
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    justify-items: start;
+
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-card {
+    border: 1px solid #3e3e3e;
+    border-radius: 12px;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card h4{
+    text-align: left;
+    margin-top: 0.3rem;
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.project-card p {
+    font-size: 0.7rem;
+    margin-top: 0.5rem;
+}
+
+
+.project-image {
+    overflow: hidden;
+    aspect-ratio: 16 / 9;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease-out;
+}
+
+.project-image img:hover {
+    transform: scale(1.05);
+}
+
+.project-info {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.project-card .skill-tags {
+    margin-bottom: 1.5rem;
+}
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    
+    justify-content: center;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: #e0e0e0;
+
+    
+    border: 1px solid #3e3e3e;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: auto;
+}
+
+.project-link:hover {
+    background-color: #2a2a2a;
+}
 
 /* =================== FOR SMALL SCREENS =================== */
 @media (max-width: 768px) {
@@ -338,13 +423,46 @@ section {
 
     }
 
-    nav {
-        display: none;
+    nav a {
+        font-size: 0.9rem;
+        margin-left: 1rem;
     }
 
     .experience-card-header {
         flex-direction: column;
         align-items: flex-start;
         gap: 0.5rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .profile-image {
+        width: 50%;
+        margin: auto;
+    }
+
+    .profile-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .profile-information > h1,
+    .profile-information > h3 {
+        text-align: center;
+    }
+
+    .profile-contacts {
+        padding: 1rem 1rem;
+        border-radius: 1rem;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+
+        margin: auto;
+
     }
 }

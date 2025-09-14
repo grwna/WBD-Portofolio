@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grwna's Portofolio</title>
+    <link rel="icon" type="image/x-icon" href="public/favicon.ico">
+    
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -12,7 +14,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-</head>
 </head>
 <body class="bg1">
     <header>
@@ -308,9 +309,96 @@
         <section id="projects" class="bg1">
             <h2>Projects I've Done</h2>
             <div class="project-list">
-                <div class="project-container"></div>
-                <div class="project-container"></div>
-                <div class="project-container"></div>
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="public/projects/siapbosku.png" alt="">
+                    </div>
+
+                    <div class="project-info">
+                        <h4>SiapbOSku</h4>
+                        <p>A 32-bit operating system with separation between kernel and user land. It uses a custom EXT2 filesystem, with multitasking capabilities, and a fully working shell</p>
+
+                        <div class="skill-tags">
+                            <span class="skill-tag">C</span>
+                            <span class="skill-tag">x86 Assembly</span>
+                            <span class="skill-tag">Kernel Development</span>
+                            <span class="skill-tag">Filesystem Development (EXT2)</span>
+                        </div>
+
+                        <a href="https://github.com/grwna/os-2025-siapbOSku" class="project-link" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                            <span>View on Github</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="public/projects/priangan.png" alt="">
+                    </div>
+
+                    <div class="project-info">
+                        <h4>ASM HTTP Server</h4>
+                        <p>A HTTP server written entirely in x86 assembly. The server can handle multiple connectiens simultaneously using a forking model for each client request. It also serves various filetypes</p>
+
+                        <div class="skill-tags">
+                            <span class="skill-tag">x86 Assembly</span>
+                            <span class="skill-tag">C</span>
+                            <span class="skill-tag">Nginx</span>
+                            <span class="skill-tag">Socket Programming</span>
+                        </div>
+
+                        <a href="https://github.com/grwna/seleksi-lab-sister-2025-b-2/tree/main/1-Ngalegaan%20Kakawasan%2C%20Tamamo%20Silang%20-%20Sunda%20Priangan" class="project-link" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                            <span>View on Github</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="public/projects/mandelbrot.png" alt="">
+                    </div>
+
+                    <div class="project-info">
+                        <h4>Mandelbrot Generator</h4>
+                        <p>A Mandelbrot set generator that uses CPU and GPU parallelization to achieve high speed generation</p>
+
+                        <div class="skill-tags">
+                            <span class="skill-tag">C++</span>
+                            <span class="skill-tag">OpenMP</span>
+                            <span class="skill-tag">CUDA</span>
+                        </div>
+
+                        <a href="https://github.com/grwna/seleksi-lab-sister-2025-b-1/tree/main/4-Mandelbrot%20of%20Madness" class="project-link" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                            <span>View on Github</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="public/projects/semettre.png" alt="">
+                    </div>
+
+                    <div class="project-info">
+                        <h4>Bitwise Multiplication Calculator</h4>
+                        <p>A multiplication calculator that is written entirely using bitwise operators. Can handle numbers up to 10^1.000.000 in a reasonable time</p>
+
+                        <div class="skill-tags">
+                            <span class="skill-tag">C</span>
+                            <span class="skill-tag">Number Theoretic Transform</span>
+                            <span class="skill-tag">Bitwise Programming</span>
+                        </div>
+
+                        <a href="https://github.com/grwna/seleksi-lab-sister-2025-b-1/tree/main/8-Se%20mettre%20Requiem" class="project-link" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                            <span>View on Github</span>
+                        </a>
+                    </div>
+                </article>
+                
             </div>
         </section>
     </main>
