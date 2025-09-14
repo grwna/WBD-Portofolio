@@ -431,9 +431,16 @@ footer {
         margin: auto;
 
     }
+    
+    .header-name > a {
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: #FCFFFF;
+        text-decoration: none;
+    }
 
     nav a {
-        font-size: 0.9rem;
+        font-size: 0.7rem;
         margin-left: 1rem;
     }
 
